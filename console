@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+namespace altamatick\test;
+
+require __DIR__.'/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use altamatick\test\user\Developer;
+
+$application = new Application();
+$application->add(new Developer());
+var_dump(new Developer());
+exit;
+$application->run();
+

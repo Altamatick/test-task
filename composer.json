@@ -5,5 +5,15 @@
     "version": "1.0.0",
     "require": {
         "symfony/console": "*"
+    },
+    "autoload": {
+        "classmap": [
+            "employees/",
+            "skills/",
+            "user/",
+            "EmploeeFactory",
+            "SkillControlIntarface",
+            "SkillIntarface"
+        ]
     }
 }
