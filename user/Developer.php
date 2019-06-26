@@ -1,5 +1,5 @@
 <?php
-namespace altamatick\test\user;
+namespace test\user;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;

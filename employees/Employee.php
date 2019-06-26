@@ -1,7 +1,7 @@
 <?php
-namespace altamatick\test\employees;
+namespace test\employees;
 
-use altamatick\test\{
+use test\{
     SkillInterface,
     SkillControlIntarface
 };

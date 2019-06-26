@@ -1,5 +1,5 @@
 <?php
-namespace altamatick\test\employees;
+namespace test\employees;
 
 class Developer extends Emploee
 {

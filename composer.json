@@ -6,13 +6,8 @@
         "symfony/console": "*"
     },
     "autoload": {
-        "classmap": [
-            "employees/",
-            "skills/",
-            "user/",
-            "EmploeeFactory",
-            "SkillControlIntarface",
-            "SkillIntarface"
-        ]
+        "psr-4": { 
+            "test\\": "" 
+        }
     }
 }

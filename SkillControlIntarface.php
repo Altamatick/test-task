@@ -1,5 +1,5 @@
 <?php
-namespace altamatick\test;
+namespace test;
 
 interface SkillControlIntarface
 {

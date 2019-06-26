@@ -1,14 +1,14 @@
 <?php
-namespace altamatick\test;
+namespace test;
 
-use altamatick\test\skills\{
+use test\skills\{
     CommunicationSkill,
     DrawSkill,
     SetTaskSkill,
     TestCodeSkill,
     WriteCodeSkill
 };
-use altamatick\test\employees\{
+use test\employees\{
     Designer,
     Developer,
     Manager,

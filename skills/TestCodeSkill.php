@@ -1,7 +1,7 @@
 <?php
-namespace altamatick\test\skills;
+namespace test\skills;
 
-use altamatick\test\SkillInterface;
+use test\SkillInterface;
 
 class TestCodeSkill implements SkillInterface
 {
