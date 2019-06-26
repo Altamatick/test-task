@@ -7,7 +7,12 @@ class DrawSkill implements SkillInterface
 {
     public function use() : void
     {
-        echo "drawing";
+        echo "drawing\n";
+    }
+
+    public static function getName() : string
+    {
+        return 'draw';
     }
 }
 

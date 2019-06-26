@@ -1,8 +1,11 @@
 <?php
 namespace test\employees;
 
-class Tester extends Emploee
+class Tester extends Employee
 {
-    const TYPE = 'tester';
+    public static function getName() : string
+    {
+        return "tester";
+    }
 }
 

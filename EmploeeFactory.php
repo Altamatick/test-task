@@ -17,17 +17,17 @@ use test\employees\{
 
 class EmploeeFactory
 {
-    public static function getEmploee(string $type) : object
+    public static function getEmploee(string $type) : SkillControlIntarface
     {
         switch ($type) {
-            case Designer::TYPE: 
+            case Designer::getName(): 
                 $emploee = new Designer();
                 $emploee
                     ->addSkill(new DrawSkill())
                     ->addSkill(new CommunicationSkill());
                 return $emploee;
 
-            case Developer::TYPE: 
+            case Developer::getName(): 
                 $emploee = new Developer();
                 $emploee
                     ->addSkill(new WriteCodeSkill())
@@ -35,13 +35,13 @@ class EmploeeFactory
                     ->addSkill(new CommunicationSkill());
                 return $emploee;
 
-            case Manager::TYPE: 
+            case Manager::getName(): 
                 $emploee = new Manager();
                 $emploee
                     ->addSkill(new SetTaskSkill());
                 return $emploee;
 
-            case Tester::TYPE: 
+            case Tester::getName(): 
                 $emploee = new Tester();
                 $emploee
                     ->addSkill(new CommunicationSkill())

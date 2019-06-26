@@ -6,17 +6,17 @@ use test\{
     SkillControlIntarface
 };
 
-abstract class Emploee implements SkillControlIntarface
+abstract class Employee implements SkillControlIntarface
 {
     private $skills = [];
 
-    public function addSkill(string $name, SkillInterface $skill) : object
+    public function addSkill(SkillInterface $skill) : SkillControlIntarface
     {
-        $this->skills[$name] = $skill;
+        $this->skills[$skill::getName()] = $skill;
         return $this;
     }
 
-    public function deleteSkill(string $name) : object
+    public function deleteSkill(string $name) : SkillControlIntarface
     {
         if (array_key_exists($name, $this->skills)) {
             unset($this->skills[$name]);
@@ -29,9 +29,16 @@ abstract class Emploee implements SkillControlIntarface
         return array_key_exists($name, $this->skills);
     }
 
-    public function getSkill(string $name) : object
+    public function getSkill(string $name) : SkillInterface
     {
         return $this->hasSkill($name) ? $this->skills[$name] : null;
+    }
+
+    public function showSkills()
+    {
+        foreach ($this->skills as $key => $skill) {
+            $skill->use();
+        }
     }
 }
 

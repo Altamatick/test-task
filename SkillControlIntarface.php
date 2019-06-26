@@ -3,12 +3,16 @@ namespace test;
 
 interface SkillControlIntarface
 {
-    public function addSkill(string $name, SkillInterface $skill) : object;
+    public function addSkill(SkillInterface $skill) : self;
 
-    public function deleteSkill(string $name) : object;
+    public function deleteSkill(string $name) : self;
 
     public function hasSkill(string $name) : bool;
 
-    public function getSkill(string $name) : object;
+    public function getSkill(string $name) : SkillInterface;
+
+    public function showSkills();
+
+    public static function getName() : string;
 }
 

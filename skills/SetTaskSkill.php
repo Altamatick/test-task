@@ -7,7 +7,12 @@ class SetTaskSkill implements SkillInterface
 {
     public function use() : void
     {
-        echo "task setting";
+        echo "task setting\n";
+    }
+
+    public static function getName() : string
+    {
+        return 'setTask';
     }
 }
 

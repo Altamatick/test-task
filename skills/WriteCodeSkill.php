@@ -7,7 +7,12 @@ class WriteCodeSkill implements SkillInterface
 {
     public function use() : void
     {
-        echo "code writing";
+        echo "code writing\n";
+    }
+
+    public static function getName() : string
+    {
+        return 'writeCode';
     }
 }
 
