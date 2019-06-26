@@ -1,6 +1,5 @@
 {
-    "name": "test-task-together-networks",
-    "type": "test-task",
+    "name": "task",
     "minimum-stability": "stable",
     "description": "",
     "version": "1.0.0",
