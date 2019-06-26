@@ -2,9 +2,6 @@
     "name": "altamatick/test-task",
     "description": "",
     "version": "1.0.0",
-    "require": {
-        "symfony/console": "*"
-    },
     "autoload": {
         "psr-4": { 
             "test\\": "" 
