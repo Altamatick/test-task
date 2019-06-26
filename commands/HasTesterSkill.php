@@ -5,7 +5,7 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputArgument;
-use test\EmploeeFactory;
+use test\EmployeeFactory;
 use test\employees\Tester;
 
 class HasTesterSkill extends Command
@@ -17,7 +17,7 @@ class HasTesterSkill extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $hasSkill = EmploeeFactory::getEmploee(Tester::getName())->hasSkill($input->getArgument('skill'));
+        $hasSkill = EmployeeFactory::getEmployee(Tester::getName())->hasSkill($input->getArgument('skill'));
         $output->writeln($hasSkill ? "true" : "false");
     }
 }

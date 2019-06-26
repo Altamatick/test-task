@@ -15,39 +15,39 @@ use test\employees\{
     Tester
 };
 
-class EmploeeFactory
+class EmployeeFactory
 {
-    public static function getEmploee(string $type) : SkillControlIntarface
+    public static function getEmployee(string $type) : SkillControlIntarface
     {
         switch ($type) {
             case Designer::getName(): 
-                $emploee = new Designer();
-                $emploee
+                $employee = new Designer();
+                $employee
                     ->addSkill(new DrawSkill())
                     ->addSkill(new CommunicationSkill());
-                return $emploee;
+                return $employee;
 
             case Developer::getName(): 
-                $emploee = new Developer();
-                $emploee
+                $employee = new Developer();
+                $employee
                     ->addSkill(new WriteCodeSkill())
                     ->addSkill(new TestCodeSkill())
                     ->addSkill(new CommunicationSkill());
-                return $emploee;
+                return $employee;
 
             case Manager::getName(): 
-                $emploee = new Manager();
-                $emploee
+                $employee = new Manager();
+                $employee
                     ->addSkill(new SetTaskSkill());
-                return $emploee;
+                return $employee;
 
             case Tester::getName(): 
-                $emploee = new Tester();
-                $emploee
+                $employee = new Tester();
+                $employee
                     ->addSkill(new CommunicationSkill())
                     ->addSkill(new TestCodeSkill())
                     ->addSkill(new SetTaskSkill());
-                return $emploee;
+                return $employee;
         }
 
         throw new \Exception("Employee type not found");
