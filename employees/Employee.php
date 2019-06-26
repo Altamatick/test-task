@@ -18,7 +18,7 @@ abstract class Employee implements SkillControlIntarface
 
     public function deleteSkill(string $name) : SkillControlIntarface
     {
-        if (array_key_exists($name, $this->skills)) {
+        if ($this->hasSkill($name)) {
             unset($this->skills[$name]);
         }
         return $this;
