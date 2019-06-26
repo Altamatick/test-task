@@ -1,0 +1,10 @@
+{
+    "name": "test-task-together-networks",
+    "type": "test-task",
+    "minimum-stability": "stable",
+    "description": "",
+    "version": "1.0.0",
+    "require": {
+        "symfony/console": "*"
+    }
+}

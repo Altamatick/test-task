@@ -31,7 +31,7 @@ abstract class Emploee implements SkillControlIntarface
 
     public function getSkill(string $name) : object
     {
-        return $this->skills[$name];
+        return $this->hasSkill($name) ? $this->skills[$name] : null;
     }
 }
 
