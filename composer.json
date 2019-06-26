@@ -1,6 +1,5 @@
 {
     "name": "altamatick/test-task",
-    "minimum-stability": "stable",
     "description": "",
     "version": "1.0.0",
     "require": {
